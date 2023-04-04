@@ -1,0 +1,106 @@
+/* src/styles.css */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font-color: 230 35% 7%;
+}
+
+h1{
+  text-align: center;
+}
+
+body {
+  color: hsl(var(--font-color));
+}
+img {
+  max-width: 100%;
+}
+
+.img_background{
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  z-index:-30;
+}
+
+.qrcode__container{
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 14%;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width:767px) {
+  .qrcode__container{
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 80%;
+  }
+
+  .img_background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-30;
+  }
+
+}
+
+@media (min-width:768px) {
+  .qrcode__container{
+      max-width: 100%;
+      max-height: 100%;
+      padding-top: 45%;
+  }
+
+  .img_background{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index:-30;
+  }
+}
+
+@media (min-width:992px) {
+  .qrcode__container{
+      max-width: 100%;
+      max-height: 100%;
+      padding-top: 35%;
+  }
+
+  .img_background{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    z-index:-30;
+  }
+}
+
+@media (min-width:1200px) {
+  .qrcode__container{
+      max-width: 100%;
+      max-height: 100%;
+      padding-top: 22%;
+  }
+
+  .img_background{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    z-index:-30;
+  }
+}
